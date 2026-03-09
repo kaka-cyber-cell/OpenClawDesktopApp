@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>OpenClawDesktopApp — One-Click AI Agent Installer for Windows | Feishu WhatsApp DeepSeek</title>
+    <meta name="description" content="OpenClawDesktopApp is the simplest way to deploy OpenClaw AI Agents on Windows. One-click setup for Feishu, WhatsApp, Telegram bots with DeepSeek, ChatGPT, Claude, and Gemini. No terminal, no Node.js — just a beautiful GUI.">
+    <meta name="keywords" content="OpenClaw, OpenClawDesktopApp, AI Agent, Windows installer, one-click AI setup, Feishu bot, WhatsApp bot automation, Telegram AI bot, DeepSeek API, ChatGPT desktop, Claude desktop, Gemini AI, no-code AI deployment, AI assistant Windows, 飞书机器人, AI Agent 安装包">
+    <meta name="author" content="OpenClaw Organization">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://openclaw.ai/desktop/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://openclaw.ai/desktop/">
+    <meta property="og:title" content="OpenClawDesktopApp — Deploy AI Agents on Windows in 1 Click">
+    <meta property="og:description" content="No terminal needed. Install OpenClaw on Windows with a professional GUI. Supports Feishu, WhatsApp, DeepSeek, ChatGPT, Claude and more.">
+    <meta property="og:image" content="openclaw-mascot.png">
+    <meta property="og:site_name" content="OpenClaw">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OpenClawDesktopApp — One-Click AI Agent Installer for Windows">
+    <meta name="twitter:description" content="Deploy AI agents on Windows without touching the terminal. Supports Feishu, WhatsApp, Telegram, DeepSeek, ChatGPT, Claude.">
+    <meta name="twitter:image" content="openclaw-mascot.png">
+
+    <!-- Alternate Language -->
+    <link rel="alternate" hreflang="zh-CN" href="zh/index.html">
+    <link rel="alternate" hreflang="en" href="index.html">
+    <link rel="alternate" hreflang="x-default" href="index.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="openclaw-mascot.png" type="image/png">
+    <link rel="apple-touch-icon" href="openclaw-mascot.png">
+    
+    <!-- JSON-LD Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "OpenClawDesktopApp",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "One-click Windows installer for the OpenClaw AI Agent framework. Deploy AI-powered bots on Feishu, WhatsApp, and Telegram with a visual GUI. Supports DeepSeek, ChatGPT, Claude, and Gemini.",
+      "downloadUrl": "https://openclaw.ai/desktop/OpenClawDesktopApp_SetUp.exe",
+      "softwareVersion": "1.0.0",
+      "author": {
+        "@type": "Organization",
+        "name": "OpenClaw",
+        "url": "https://openclaw.ai"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "56"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is OpenClawDesktopApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenClawDesktopApp is a one-click Windows installer for the OpenClaw AI Agent framework. It bundles Node.js, Playwright, and all dependencies so you can deploy AI-powered chatbots on Feishu, WhatsApp, and Telegram without any terminal commands."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which AI models does OpenClawDesktopApp support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenClawDesktopApp supports 5+ LLM providers including DeepSeek V3/R1, OpenAI GPT-4o/o1/o3, Anthropic Claude 3.5 Sonnet, and Google Gemini 2.0 Flash. You can switch between them with a single click in the GUI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need Node.js or programming knowledge to use it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. OpenClawDesktopApp is designed for non-technical users. All dependencies are bundled inside the installer. You never need to open a terminal or write any code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is OpenClawDesktopApp free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. OpenClawDesktopApp is completely free to download and use. You only pay for the AI model API usage from providers like DeepSeek or OpenAI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which chat platforms are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenClawDesktopApp supports Feishu (Lark), WhatsApp, Telegram, and Discord. Each channel can be configured visually through the GUI dashboard."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-glow"></div>
+
+    <nav aria-label="Main navigation">
+        <a href="#" class="logo-wrap" aria-label="OpenClawDesktopApp Home">
+            <img src="openclaw-mascot.png" alt="OpenClaw Official Logo" width="28" height="28" style="margin-right: 8px;">
+            OpenClawDesktopApp
+        </a>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#channels">Channels</a>
+            <a href="#engines">AI Engines</a>
+            <a href="#faq">FAQ</a>
+            <a href="zh/index.html" hreflang="zh-CN" title="切换到中文版">中/EN</a>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding-top: 6rem;">
+        <img src="openclaw-mascot.png" alt="OpenClaw AI Agent Red Robot Mascot" class="mascot-img" width="120" style="margin-bottom: 2rem; object-fit: contain;">
+        <h1 class="brand-text">OpenClaw</h1>
+        <div class="tagline" style="font-size: 1.25rem;">ONE-CLICK SETUP &nbsp;&nbsp; PURE VISUAL CONTROL</div>
+        <p>Deploy the powerful <strong>OpenClaw AI Agent</strong> framework on <strong>Windows</strong> in seconds. No Node.js tutorials, no terminal errors—just a clean, professional GUI.</p>
+        
+        <div id="download" style="margin-top:2rem;">
+            <a href="OpenClawDesktopApp_SetUp.exe" class="cta-btn" download aria-label="Download OpenClawDesktopApp installer for Windows">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; margin-right:8px; vertical-align:middle;" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+               Download Installer for Windows
+            </a>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar" aria-label="Key statistics">
+        <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">LLM Providers</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Chat Channels</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Terminal Commands</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">1‑Click</div>
+            <div class="stat-label">Full Deployment</div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Features -->
+        <section id="features" class="section" aria-labelledby="features-title">
+            <div class="section-header">
+                <h2 class="section-title" id="features-title"><span>⟩</span> Why Desktop Version?</h2>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>🚀 One-Click Magic</h3>
+                    <p>Skip the terminal hell. Our installer automatically configures <strong>Node.js</strong>, <strong>Pnpm</strong>, and <strong>Playwright Chromium</strong> internally. One click, and you're ready to automate.</p>
+                </article>
+                <article class="card">
+                    <h3>🖥️ Visual GUI Dashboard</h3>
+                    <p>Manage your engine status, view <strong>real-time logs</strong>, and swap LLM models (<strong>DeepSeek</strong>, <strong>ChatGPT</strong>, <strong>Claude</strong>) through a friendly Windows interface.</p>
+                </article>
+                <article class="card">
+                    <h3>🛡️ Isolated & Portable</h3>
+                    <p>Doesn't mess with your system environment variables. Everything runs inside the app folder. <strong>Clean installation</strong>, even cleaner uninstallation.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Channels -->
+        <section id="channels" class="section" aria-labelledby="channels-title">
+            <div class="section-header">
+                <h2 class="section-title" id="channels-title"><span>⟩</span> Multi-Platform Channel Hub</h2>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                   <div class="card-badge">FEISHU / LARK</div>
+                   <h3>Enterprise Bot Integration</h3>
+                   <p>Configure <strong>Feishu App ID</strong>, Secret, Encrypt Key, and Verification Token through intuitive visual forms. Real-time long-connection status monitoring on the dashboard.</p>
+                </article>
+                <article class="card">
+                    <div class="card-badge">WHATSAPP</div>
+                   <h3>Secure QR Pairing</h3>
+                   <p>Scan the <strong>WhatsApp pairing QR code</strong> directly inside the application's built-in secure Chromium window. No third-party browser extensions required.</p>
+                </article>
+                <article class="card">
+                    <div class="card-badge">TELEGRAM</div>
+                   <h3>Bot Token Binding</h3>
+                   <p>Paste your <strong>Telegram Bot Token</strong> into a single input field. The engine validates and connects automatically within seconds.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- AI Engines -->
+        <section id="engines" class="section" aria-labelledby="engines-title">
+            <div class="section-header">
+                <h2 class="section-title" id="engines-title"><span>⟩</span> Multi-Engine AI Brain</h2>
+            </div>
+            <div class="card-grid grid-2">
+                <article class="card card-highlight">
+                   <div class="card-badge" style="background: #0ea5e9;">DEEPSEEK</div>
+                   <h3>DeepSeek V3 / R1</h3>
+                   <p>Native support for <strong>DeepSeek's reasoning models</strong>. Optimized for Chinese users with ultra-low latency domestic API routing.</p>
+                </article>
+                <article class="card card-highlight">
+                   <div class="card-badge" style="background: #10b981;">OPENAI</div>
+                   <h3>GPT-4o / o1 / o3</h3>
+                   <p>Full compatibility with <strong>OpenAI's model lineup</strong>. Supports custom Base URL for proxy endpoints and regional compliance.</p>
+                </article>
+                <article class="card card-highlight">
+                   <div class="card-badge" style="background: #8b5cf6;">ANTHROPIC</div>
+                   <h3>Claude 3.5 Sonnet</h3>
+                   <p>Connect to <strong>Anthropic's Claude</strong> for nuanced, safety-conscious AI conversations. One-click API key testing included.</p>
+                </article>
+                <article class="card card-highlight">
+                   <div class="card-badge" style="background: #f59e0b;">GOOGLE</div>
+                   <h3>Gemini 2.0 Flash</h3>
+                   <p>Leverage <strong>Google's latest multi-modal AI</strong>. Ideal for complex reasoning and visual understanding tasks.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="section" aria-labelledby="arch-title">
+            <div class="section-header">
+                <h2 class="section-title" id="arch-title"><span>⟩</span> Enterprise-Grade Architecture</h2>
+            </div>
+            <div class="arch-grid">
+                <div class="arch-item">
+                    <div class="arch-icon">📦</div>
+                    <h4>Self-Contained Runtime</h4>
+                    <p>Bundled Node.js 22 LTS + Pnpm. Zero external dependencies. Works fully offline after installation.</p>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-icon">🔄</div>
+                    <h4>Process Daemon</h4>
+                    <p>Built-in process lifecycle management. Auto-restart on crash, graceful shutdown, and zombie process cleanup.</p>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-icon">🌐</div>
+                    <h4>Playwright Browser Core</h4>
+                    <p>Silently installs a dedicated Chromium instance for web automation, scraping, and WhatsApp sessions.</p>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-icon">🔐</div>
+                    <h4>Local-First Security</h4>
+                    <p>All API keys and credentials stored exclusively on your machine. No data transmitted to any third-party server.</p>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-icon">📊</div>
+                    <h4>Real-Time Log Viewer</h4>
+                    <p>Live engine output streamed to a scrollable log panel. Filter by severity, search by keyword.</p>
+                </div>
+                <div class="arch-item">
+                    <div class="arch-icon">⚙️</div>
+                    <h4>Hot Configuration</h4>
+                    <p>Change LLM providers, channel settings, and system prompts without restarting the engine.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (SEO Gold Mine) -->
+        <section id="faq" class="section" aria-labelledby="faq-title">
+            <div class="section-header">
+                <h2 class="section-title" id="faq-title"><span>⟩</span> Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary>What is OpenClawDesktopApp?</summary>
+                    <p>OpenClawDesktopApp is a <strong>one-click Windows installer</strong> for the OpenClaw AI Agent framework. It bundles Node.js, Playwright, and all dependencies so you can deploy AI-powered chatbots on Feishu, WhatsApp, and Telegram without any terminal commands.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Which AI models does it support?</summary>
+                    <p>It supports <strong>5+ LLM providers</strong> including DeepSeek V3/R1, OpenAI GPT-4o/o1/o3, Anthropic Claude 3.5 Sonnet, and Google Gemini 2.0 Flash. You can switch between them with a single click in the GUI.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do I need Node.js or programming knowledge?</summary>
+                    <p><strong>No.</strong> OpenClawDesktopApp is designed for non-technical users. All dependencies are bundled inside the installer. You never need to open a terminal or write any code.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is OpenClawDesktopApp free?</summary>
+                    <p><strong>Yes.</strong> OpenClawDesktopApp is completely free to download and use. You only pay for the AI model API usage from providers like DeepSeek or OpenAI.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Which chat platforms are supported?</summary>
+                    <p>OpenClawDesktopApp supports <strong>Feishu (Lark), WhatsApp, Telegram, and Discord</strong>. Each channel can be configured visually through the GUI dashboard.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is my data safe?</summary>
+                    <p><strong>Absolutely.</strong> All API keys and configuration data are stored exclusively on your local machine. OpenClawDesktopApp does not transmit any credentials or chat data to any third-party cloud server.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="terms.html">Terms</a>
+        <span class="footer-dot">·</span>
+        <a href="privacy.html">Privacy</a>
+        <span class="footer-dot">·</span>
+        <span>&copy; 2026 OpenClaw</span>
+    </footer>
+</body>
+</html>
