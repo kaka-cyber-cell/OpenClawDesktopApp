@@ -123,8 +123,11 @@ nav {
 .brand-text {
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 800;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
+  /* Slightly looser to avoid overlap */
   margin-bottom: 0.5rem;
+  padding-right: 15px;
+  /* CRITICAL: Prevents the 'w' from being clipped */
   color: #fff;
   background: linear-gradient(90deg, #fff 0%, #ff5757 25%, #5eead4 50%, #fff 75%, #ff5757 100%);
   background-size: 200% auto;
@@ -132,6 +135,8 @@ nav {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: brand-shimmer 4s linear infinite;
+  display: block;
+  overflow: visible;
 }
 
 @keyframes brand-shimmer {
